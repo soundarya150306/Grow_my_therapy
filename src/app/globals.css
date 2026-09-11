@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Warm, grounded, calming therapy palette */
+  --background: #FAF7F2;        /* Warm Alabaster / Soft Cream Linen */
+  --surface: #FFFFFF;           /* Crisp Pure White Surface */
+  --surface-muted: #F3ECE2;     /* Calming Warm Oat Neutral */
+  --surface-warm: #EBE2D5;      /* Subtle Taupe Sand */
+  
+  --primary: #1C3326;           /* Deep Forest Botanical Green */
+  --primary-dark: #122119;      /* Midnight Pine */
+  --primary-light: #2A4D3A;     /* Muted Deep Forest Sage */
+  
+  --secondary: #C88D58;         /* Soft Dusty Terracotta Clay */
+  --secondary-light: #F4E8DC;   /* Gentle Terracotta Tint */
+  
+  --accent: #5B7563;            /* Grounded Muted Sage */
+  --accent-soft: #E5ECE7;       /* Soft Whisper of Sage */
+  
+  --text-primary: #16221B;      /* Deepest Botanical Charcoal */
+  --text-secondary: #4A5850;    /* Muted Slate Olive Body Text */
+  --text-muted: #78877E;        /* Subtle Supporting Neutral */
+  
+  --border: #E5DDD3;            /* Soft Warm Border */
+  --border-subtle: #EFE9E0;     /* Ultra-light Card Divider */
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    color: var(--text-primary);
+    background-color: var(--background);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    line-height: 1.65;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom editorial utility classes */
+.editorial-lead {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  letter-spacing: 0.01em;
+}
+
+.subtle-grain {
+  background-image: radial-gradient(rgba(28, 51, 38, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.organic-blob {
+  border-radius: 60% 40% 55% 45% / 45% 50% 50% 55%;
+}
+
+.glass-nav {
+  background: rgba(250, 247, 242, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Accessible focus ring */
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+/* Subtle smooth animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Selection highlight */
+::selection {
+  background: #2A4D3A;
+  color: #FAF7F2;
+}
