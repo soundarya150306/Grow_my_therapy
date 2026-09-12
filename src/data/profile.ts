@@ -49,7 +49,7 @@ export const DOCTOR_PROFILE = {
   hero: {
     eyebrow: "LICENSED CLINICAL PSYCHOLOGIST • SANTA MONICA & CALIFORNIA TELEHEALTH",
     h1: "Healing Anxiety & Trauma with Therapy in Santa Monica",
-    subtitle: "You’ve been strong for so long—perhaps you’re ready for a place where you don’t have to be. Here, you can slow down, be seen without judgment, and gently begin finding your way back to yourself, one step at a time.",
+    subtitle: "A grounded, compassionate space to navigate anxiety, heal from trauma, and recover from burnout with evidence-based psychological care.",
     ctaPrimary: "Take the First Step",
     ctaSecondary: "Explore Services",
     reassuranceBadge: "In-Person in Santa Monica & Secure Telehealth Across CA",
@@ -59,10 +59,10 @@ export const DOCTOR_PROFILE = {
   empathyBanner: {
     eyebrow: "A SAFE SPACE TO SLOW DOWN",
     heading: "A place where you don't have to carry it all alone.",
-    leadQuote: "“You’ve been strong for so long—perhaps you’re ready for a place where you don’t have to be.”",
+    leadQuote: "“Therapy is a collaborative sanctuary where you don't have to pretend to have it all together.”",
     paragraphs: [
-      "Here, you can slow down, be seen without judgment, and gently begin finding your way back to yourself, one step at a time.",
-      "Therapy provides a supportive, collaborative sanctuary to navigate stress, calm your nervous system, and restore inner peace."
+      "Life can often feel demanding, leaving little room to breathe, process, or simply be present with yourself.",
+      "Therapy provides a warm, grounded environment to help you calm your nervous system, untangle complex emotions, and cultivate lasting resilience."
     ]
   },
 
@@ -109,7 +109,7 @@ export const DOCTOR_PROFILE = {
   ] as WhoWeSupportItem[],
 
   philosophyQuote: {
-    quote: "“You’ve been strong for so long—perhaps you’re ready for a place where you don’t have to be. Here, you can slow down, be seen without judgment, and gently begin finding your way back to yourself, one step at a time.”",
+    quote: "Somewhere along the way, you might have lost the sound of your own voice in the noise of everyone else’s needs. That’s okay. We aren’t in a rush to find it. We are just creating a quiet enough space for that voice to feel safe enough to speak again.",
     author: "Dr. Maya Reynolds, PsyD",
     role: "Licensed Clinical Psychologist • Santa Monica, CA"
   },
@@ -142,7 +142,7 @@ export const DOCTOR_PROFILE = {
   },
 
   photoBreak: {
-    statement: "“Here, you can slow down, be seen without judgment, and gently begin finding your way back to yourself, one step at a time.”",
+    statement: "“Creating a quiet, compassionate space where healing happens at your own pace.”",
     caption: "Santa Monica In-Person & California Telehealth"
   },
 
