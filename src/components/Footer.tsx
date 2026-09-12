@@ -9,9 +9,9 @@ export const Footer: React.FC = () => {
   return (
     <footer className="bg-surface border-t border-border pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-14 border-b border-border">
-          
+
           {/* Col 1: Brand & Philosophy Statement */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
                 {DOCTOR_PROFILE.name}
               </span>
             </div>
-            
+
             <p className="text-sm text-text-secondary leading-relaxed font-light max-w-md">
               A private, grounded clinical psychology practice providing thoughtful adults, high-achievers, and creatives with evidence-based therapy to heal trauma, calm overthinking, and overcome burnout.
             </p>
@@ -89,7 +89,7 @@ export const Footer: React.FC = () => {
         {/* Legal & Clinical Disclaimer */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-text-muted">
           <div>
-            © {new Date().getFullYear()} Dr. Maya Reynolds, PsyD. All rights reserved. (Fictional Therapist Portfolio Redesign)
+            © {new Date().getFullYear()} Dr. Maya Reynolds, PsyD. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
             <a href="#" className="hover:text-text-primary transition-colors">Privacy Policy</a>
